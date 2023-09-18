@@ -27,8 +27,9 @@ bridgeFiles.forEach((file) => {
 		const headers = new Headers();
 		object.writeHttpMetadata(headers);
 		headers.set('etag', object.httpEtag);
-
-		return c.newResponse(object.body, 200, {...headers})
+		return new Response(object.body, {
+			headers,
+		});
 	});
 });
 

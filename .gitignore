@@ -1,0 +1,4 @@
+wrangler.toml
+node_modules
+resources/resources.ts
+.wrangler

@@ -1,0 +1,11 @@
+name = "r2-basic-bridge"
+main = "src/index.ts"
+compatibility_date = "2023-09-14"
+workers_dev = false
+
+account_id = "xxxxxxxxxx"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "your-bucket-name"
+preview_bucket_name = "your-preview-bucket-name"
